@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "payroll_backend": {
+      "main": "src/payroll_backend/main.mo",
+      "type": "motoko"
+    },
+    "payroll_frontend": {
+      "dependencies": [
+        "payroll_backend"
+      ],
+      "source": [
+        "src/payroll_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
